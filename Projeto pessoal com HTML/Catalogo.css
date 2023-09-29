@@ -29,3 +29,27 @@ ol {
     color:rgb(255, 255, 255);
 
 }
+
+.botao {
+    text-decoration: none;
+    background-color: #e0d20d;
+    color: rgb(7, 7, 7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.botao1 {
+    text-decoration: none;
+    background-color: #c2b313;
+    color: rgb(7, 7, 7);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.video {
+
+    color: rgb(17, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}

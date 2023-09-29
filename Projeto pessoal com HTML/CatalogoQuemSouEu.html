@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,22 @@
     <title>Projeto Pessoal HTML</title>
     <link rel="stylesheet" href="Catalogo.css">
 </head>
+
+<body>
 <header>
     <img src="./Imagens 2/minhahistoria.png" width="40%"  alt="LOGO">
+
+    <p>
+        
+        <br><br>
+        <br><br><br>
+        <br><br><br>
+        </p>
 
     <h1>ALE  SOARES FOTOGRAFIA 🎞️ <HTML>
         </HTML>
         <li> Quem sou seu?</li>
-        <img src="./imagens 3/ale.jpg" width="25%"  alt="Foto do autor da biografia">
+        <img src="./Imagens 2/ale.jpg" width="25%"  alt="Foto do autor da biografia">
         <li> Meu nome é Alessandro, e cresci na periferia de São Paulo. 
             Desde a minha infância, desenvolvi uma profunda paixão pela fotografia, 
             transformando-a não apenas em minha profissão, mas também em meu passatempo favorito.</li>
@@ -26,13 +35,48 @@
         <li>"Realizei sessões de fotos para modelos e também para pessoas que desejavam melhorar sua autoestima por meio da arte da fotografia."</li>
         <li> "Ao longo da minha trajetória, tive a oportunidade de capturar momentos especiais em diferentes tipos de eventos, como shows, aniversários e festas de debutantes."</li>
     </ul>
-    <p>
+    <p class="video">
         Minha música favorita.
     </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/kXi-eu1g6dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     
-    <ol>
+    <section class="contato">
+        <h1>Para dúvidas e orçamentos, preencha o campo abaixo:</h1>
+        <div class="container">
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+
+                
+                <br>
+                <button onclick="enviar()" >Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <ol class="botao">
        
         <li>Voltar para o início</li> <a href="InicioCatalogo.html">Clique aqui</a>
     </ol>
+
+    <footer>
+        <p>Desenvolvido Alessandro Soares</p>
+    
+    
+    
+        <p>Copyroght 2023</p>
+    </footer>
+    <script src="js/script.js"> </script>
+</body>
 </header>
